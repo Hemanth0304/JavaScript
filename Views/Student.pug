@@ -1,0 +1,17 @@
+doctype html
+html
+   head
+      title hello dinesh
+   body
+      p(style="color:blue") render create html code
+      h1(style="color:red") javascript is very tuff 
+      table(border="2" cellpadding="10")
+        thead 
+            th your name 
+            th email 
+            th phone number 
+        each val in allstudents 
+            tr 
+                td #{val.yourname}
+                td #{val.email}
+                td #{val.phonenumber}

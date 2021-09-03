@@ -1,0 +1,17 @@
+doctype html
+html
+   head
+      title Employee  Details
+   body
+      
+       
+      table(border="2" cellpadding="10")
+        thead 
+            th Employee name 
+            th email 
+            th phone number 
+        each val in allemployees 
+            tr 
+                td #{val.yourname}
+                td #{val.email}
+                td #{val.phonenumber}
